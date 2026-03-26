@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" width="40" style="border-radius:50%;">
+    Welcome <span id="user"></span>
+  </h2>
+  <button class="neon-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+  <button class="neon-btn" onclick="goToNotes()">➕ Create Notes</button>
+
+  <input type="text" id="search" placeholder="🔍 Search notes..." onkeyup="loadNotes()">
+
+  <div id="notesList" class="grid"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
